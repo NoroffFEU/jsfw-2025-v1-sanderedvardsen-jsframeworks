@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "static.cloud.noroff.dev",
+        pathname: "/api/online-shop/**",
+      },
+      {
+        protocol: "https",
+        hostname: "static.noroff.dev",
+        pathname: "/api/online-shop/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
