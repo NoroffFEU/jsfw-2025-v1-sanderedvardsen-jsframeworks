@@ -34,7 +34,7 @@ An online shop built with Next.js for the JavaScript Frameworks course at Noroff
 
 ## API
 
-All product data is fetched from the [Noroff Online Shop API](https://v2.api.noroff.dev/online-shop).
+All product data is fetched from the [Noroff Online Shop API](https://docs.noroff.dev/docs/v2/basic/online-shop).
 
 ## Contact
 
