@@ -41,6 +41,9 @@ export default function SearchBar({ products }: SearchBarProps) {
           setIsOpen(true);
         }}
         onFocus={() => setIsOpen(true)}
+        onKeyDown={(e) => {
+          if (e.key === "Escape") setIsOpen(false);
+        }}
         className="w-full py-3 px-4 border border-line rounded-[10px] text-[0.95rem] bg-card outline-none transition-colors duration-200 focus:border-accent"
       />
       {isOpen && filtered.length > 0 && (

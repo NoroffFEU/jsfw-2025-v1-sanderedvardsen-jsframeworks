@@ -35,7 +35,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <h3 className="text-base font-semibold max-sm:text-sm">{product.title}</h3>
         <div className="flex gap-px text-[0.9rem]">
           {Array.from({ length: 5 }).map((_, i) => (
-            <span key={i} className={i < product.rating ? "text-star" : "text-star-empty"}>
+            <span key={i} className={i < Math.round(product.rating) ? "text-star" : "text-star-empty"}>
               ★
             </span>
           ))}
